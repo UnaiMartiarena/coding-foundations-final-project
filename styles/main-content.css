@@ -1,0 +1,95 @@
+/* Main section styles */
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+
+    /* radial-gradient; La sintaxis "at" no funciona en Safari. Al no disponer de este 
+    navegador y por lo tanto no poder comprobar el resultado final, he decidido dejar 
+    así el código, ya que el background-color gris oscuro del body ofrece una buena 
+    experiencia de usuario a los usuarios que utilicen Safari */
+    background: radial-gradient(
+        circle farthest-corner at 200px 0,
+         #464850,
+         #000
+          );
+}
+
+.page-container > .info-wrapper {
+    width: 680px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.page-container > .info-wrapper h1 {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.page-container > .info-wrapper h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #cacaca;
+    margin-bottom: 30px;
+}
+
+.big-buttons-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.big-buttons-wrapper > .big-btn a {
+    color: #fff;
+    font-size: 1.7em;
+    padding: 14px 20px;
+    transition: 0.3s;
+}
+
+/* Creo que aquí es más adecuado crear una clase para cada botón pero quería incluir 
+los selectores :nth-child() ya que los hemos visto en una sección del curso */
+.big-buttons-wrapper :first-child a {
+    background-color: #47cf73;
+    color: #000;
+}
+
+.big-buttons-wrapper :first-child a:hover {
+    background-color: #57ff8c;
+}
+
+.big-buttons-wrapper :nth-child(2) a {
+    background-color: #111;
+}
+
+.big-buttons-wrapper :nth-child(2) a:hover {
+    background-color: #333333;
+}
+
+.page-container > .screenshot-wrapper {
+    width: 600px;
+    min-width: 425px;
+    padding-left: 45px;
+}
+
+.page-container > .screenshot-wrapper h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.page-container > .screenshot-wrapper h3 a {
+    color: #55ddff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.page-container > .screenshot-wrapper h3 a:hover {
+    color: #aedef3;
+}
+
+.page-container > .screenshot-wrapper img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}

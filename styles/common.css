@@ -1,0 +1,26 @@
+/* Common styles */
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: #29292c;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+
+/* Incluyo aquí los siguientes estilos porque afectan a enlaces 
+con forma de botón que uso en diferentes secciones de la página.
+De esta forma no repito código en diferentes archivos*/
+.user-link, .user-btn, .big-btn {
+    margin-right: 10px;
+}
+
+.user-link a,
+.big-btn a {
+    text-decoration: none;
+    border-radius: 3px;
+    white-space: nowrap;
+}

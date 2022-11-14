@@ -1,0 +1,144 @@
+/* Header styles */
+.header-wrapper {
+    height: 65px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header sections leftside styles */
+.header-wrapper > .logo-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 560px;
+}
+
+.header-wrapper > .logo-navbar > .logo {
+    width: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-wrapper > .logo-navbar > .logo a {
+    padding: 18px 20px;
+}
+
+.header-wrapper > .logo-navbar > .logo img {
+    width: 140px;
+    height: 100%;
+}
+
+/* Navigation section styles */
+.navigation-wrapper {
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.navigation-wrapper > .nav-heading h3 {
+    font-size: 0.7em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f4e17f;
+    margin-top: 10px;
+}
+
+.navigation-wrapper > .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navigation-wrapper > .navbar > .nav-link {
+    text-align: center;
+    margin-right: 12px;
+    padding-bottom: 18px;
+}
+
+.navigation-wrapper > .navbar > .nav-link a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 900;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #000;
+    transition: 0.5s;
+}
+
+.navigation-wrapper > .navbar > .nav-link a:hover {
+    color: #ddd;
+    border-bottom: 3px solid #ddd;
+}
+
+.navigation-wrapper > .navbar > .nav-link > .drop-down-btn {
+    font-weight: 400;
+    font-size: 1em;
+    color: #acacac;
+    margin-left: 15px;
+}
+
+.navigation-wrapper > .navbar > .nav-link > .drop-down-btn:hover {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+/* User section styles at right of the header section */
+.user-menu-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 386px;
+}
+
+.user-menu-wrapper > .user-link a {
+    background-color: #36383F;
+    color: #fff;
+    font-size: 1em;
+    padding: 12px 20px;
+    transition: 0.4s;
+}
+
+.user-menu-wrapper > .user-link a:hover {
+    background-color: #4e505a;
+}
+
+.user-btn > .search-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.user-menu-wrapper > .user-btn > .search-btn > .fa-solid {
+    color: #87888d;
+    font-size: 1.8em;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.user-menu-wrapper > .user-btn > .search-btn > .fa-solid:hover {
+    color: #fff;
+}
+
+
+/* Including down chevron to dropdown item */
+.drop-down-btn::after {
+    padding-left: 10px;
+    font: var(--fa-font-solid);
+    content: "\f078";
+}
+
+.navigation-wrapper > .nav-link > .drop-down-btn::after {
+    font-size: 0.7em;
+    font-weight: 900;
+}
+
+.user-menu-wrapper > .user-link > .drop-down-btn::after {
+    color: #47cf73;
+}

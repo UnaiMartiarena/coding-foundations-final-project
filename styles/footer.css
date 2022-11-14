@@ -1,0 +1,31 @@
+/* Footer section */
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-link {
+    text-align: center;
+}
+
+.footer-link a {
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #36383f;
+    display: block;
+    padding: 10px;
+    border: 1px solid #666666;
+    transition: 0.4s;
+}
+
+.footer-link a:hover {
+    background-color: #4e505a;
+}
+
+.footer-link a span {
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 900;
+}
